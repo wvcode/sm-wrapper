@@ -1,39 +1,51 @@
-# cli-script
+# sm-wrapper
 
-O cli-script é um template para projetos de script linhas de comando em nodejs.
+O sm-wrapper é um cliente da API do Survey Monkey.
 
-Scripts de linha de comando são aqueles scripts que você utiliza no prompt de comando, chamando o executável do node, como no exemplo abaixo:
+## Para que ele serve?
 
-```cmd
-/path/to/folder/node script.js
+Este cliente serve para facilitar o processo de buscar os resultados das pesquisas feitas na plataforma Survey Monkey para que possam ser processadas e utilizadas de maneira livre.
+
+## O que é necessário para que funcione?
+
+Para utilizar este cliente, você deve gerar um access token no site do Survey Monkey.
+
+## Como instalar?
+
+```bash
+npm install @wvcode/sm-wrapper
 ```
 
-Este template tem o objetivo de ajuda-lo a configurar o seu editor de código preferido (o nosso é o VSCode), para ajuda-lo a escrever um código que seja, além de funcional, bonito.
+or
 
-Outra característica é que este template também tem o arquivo package.json. Se você já aprendeu um pouco sobre nodejs, sabe que esse arquivo é normalmente gerado pelo comando **npm init**, para indicar para o node que existe um projeto ali. Então, ao baixar esse repositório, você já tem um projeto node prontinho para usar!
+```bash
+yarn add @wvcode/sm-wrapper
+```
 
-Ele contém os seguintes arquivos:
+## Como utilizar?
 
-- .editorconfig - setar configurações independente do editor sendo utilizado
-- .eslintrc - configurações padrão para o javascript lintero
-- .gitignore - lista de folders a serem excluídos do processo de commit/pull/push
-- .prettierrc - regras de formatação do código
-- package.json - dependências e configurações.
+Segue um exemplo básico de utilização:
 
-## Como utilizar
+```javascript
+const SurveyAPI = require('@wvcode/sm-wrapper')
 
-Para usar esse repositório, você pode fazer o seguinte:
+const accessToken = 'you-access-token-here'
 
-- Fazer o download, clicando no link de download na interface do Gitlab
-- Se você tem uma conta no gitlab:
-  - pode utilizar a funcionalidade de Fork, para duplicar o repositório
-  - pode clonar o repositório no seu computador e depois mudar o apontamento do repositório remoto para o seu próprio repositório
+const api = new SurveyAPI(accessToken)
 
-Caso você não tenha uma conta no gitlab, a opção de clonar o repositório também irá funcionar, sem problemas!
+api
+  .getSurveys()
+  .then(pesquisas => {
+    console.log(JSON.stringify(pesquisas))
+  })
+  .catch(error => {
+    console.log(error)
+  })
+```
 
-## Finalizando
+## Mais Informações?
 
-Esperamos que esse repositório te ajude em seus projetos!!!
+É só acessar a documentação [aqui](documentation.md).
 
 **Bom código!!!**
 

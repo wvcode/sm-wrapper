@@ -1,7 +1,14 @@
 {
-  "name": "cli-script",
+  "name": "@wvcode/sm-wrapper",
+  "description": "Módulo para facilitar o acesso a API do Survey Monkey.",
   "version": "1.0.0",
-  "repository": "https://gitlab.com/wvcode/javascript/cli-script.git",
+  "main": "sm-wrapper.js",
+  "repository": "https://gitlab.com/wvcode/modules/sm-wrapper.git",
+  "homepage": "https://gitlab.com/wvcode/modules/sm-wrapper.git#readme",
   "author": "Walter Ritzel <wpcortes@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21"
+  }
 }
