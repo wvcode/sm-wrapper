@@ -1,7 +1,7 @@
 {
   "name": "@wvcode/sm-wrapper",
   "description": "Módulo para facilitar o acesso a API do Survey Monkey.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "sm-wrapper.js",
   "repository": "https://gitlab.com/wvcode/modules/sm-wrapper.git",
   "homepage": "https://gitlab.com/wvcode/modules/sm-wrapper.git#readme",

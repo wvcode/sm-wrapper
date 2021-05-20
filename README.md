@@ -13,13 +13,13 @@ Para utilizar este cliente, você deve gerar um access token no site do Survey M
 ## Como instalar?
 
 ```bash
-npm install sm-wrapper
+npm install @wvcode/sm-wrapper
 ```
 
 or
 
 ```bash
-yarn add sm-wrapper
+yarn add @wvcode/sm-wrapper
 ```
 
 ## Como utilizar?
