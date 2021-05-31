@@ -1,10 +1,10 @@
 {
   "name": "@wvcode/sm-wrapper",
-  "description": "Módulo para facilitar o acesso a API do Survey Monkey.",
-  "version": "1.0.1",
+  "description": "Este cliente de API serve para facilitar o processo de buscar os resultados das pesquisas feitas na plataforma Survey Monkey para que possam ser processadas e utilizadas de maneira livre.",
+  "version": "1.0.2",
   "main": "sm-wrapper.js",
-  "repository": "https://gitlab.com/wvcode/modules/sm-wrapper.git",
-  "homepage": "https://gitlab.com/wvcode/modules/sm-wrapper.git#readme",
+  "repository": "https://github.com/wvcode/sm-wrapper.git",
+  "homepage": "https://github.com/wvcode/sm-wrapper.git#readme",
   "author": "Walter Ritzel <wpcortes@gmail.com>",
   "license": "MIT",
   "dependencies": {
